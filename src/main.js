@@ -1,9 +1,7 @@
-const a = 3;
-const b = 2;
-const c = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+const search = () => {};
+const searchAlbuns = () => {};
+const searchArtists = () => {};
+const searchTracks = () => {};
+const searchPlaylists = () => {};
 
-function sum() {
-  return a + b + c;
-}
-
-sum();
+export { search, searchAlbuns, searchArtists, searchTracks, searchPlaylists };
