@@ -1,5 +1,5 @@
 import nodeFetch from 'node-fetch';
-import { searchAlbums } from '../src/main';
+import { searchAlbums } from '../src/album';
 
 global.fetch = nodeFetch;
 
