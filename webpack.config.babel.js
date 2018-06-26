@@ -7,7 +7,7 @@ const include = join(__dirname, 'src');
 export default {
   mode: nodeENV,
   devtool: 'source-map',
-  entry: './src/index',
+  entry: './index',
   output: {
     path: join(__dirname, 'dist'),
     libraryTarget: 'umd',

@@ -1,9 +1,9 @@
 import nodeFetch from 'node-fetch';
-import { searchAlbums } from '../src/album';
+import SpotifyWrapper from '../src';
 
 global.fetch = nodeFetch;
-
-const albums = searchAlbums('Incubus');
+const spotify = new SpotifyWrapper({ token: 'foo' });
+const albums = spotify.search.albums('Incubus');
 
 albums
   .then(data => data.albums.items.map(item => console.log(item)))
